@@ -24,6 +24,6 @@
 
 - DER encoded signatures follows a specific format:
 
-    - 0x30<length>0x02<length of r><r>0x02<length of s><s><sighash>
+    - 0x30 [length] 0x02 [length-of-r] [r] 0x02 [length-of-s] [s] [sighash]
 
 - When you're signing, you need to take into consideration whether the message digest (commitment hash) has already been **double hashed with SHA-256** and formatted properly or else you'll end up with an invalid signature.
